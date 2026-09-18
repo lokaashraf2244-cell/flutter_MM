@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'customsocialbutton.dart';
 import 'custom_text_filed_widget.dart';
 import 'signupscreen.dart';
-import 'Theme_cubit.dart';
-import 'Theme_state.dart';
+import 'theme_cubit.dart';
+import 'theme_state.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'productscreen.dart';
 
