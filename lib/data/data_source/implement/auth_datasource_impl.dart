@@ -1,3 +1,8 @@
+import 'package:dartz/dartz.dart';
+import 'package:mm/core/network/error/failures.dart';
+import 'package:mm/core/network/api/api_consumer.dart';
+import 'package:mm/data/data_source/abstract/auth_datasource.dart';
+
 class AuthDataSourceImpl implements AuthDataSource {
 
   final ApiConsumer apiConsumer;
@@ -9,31 +14,40 @@ class AuthDataSourceImpl implements AuthDataSource {
     required String email,
     required String password,
   }) async {
-    final response = await apiConsumer.post(
-      '/login',
-      data: {
+    final response = await  apiConsumer.post(
+      path: '/login',
+      body: {
         'email': email,
         'password': password,
       },
     );
-
-    return Right(response);
+    return response.fold(
+          (failure) => Left(failure),
+          (data) => Right(data),
+    );
   }
 
   @override
   Future<Either<Failure, Map<String, dynamic>>> signUp({
     required String email,
+    required String firstName,
+    required String lastName,
     required String password,
   }) async {
     final response = await apiConsumer.post(
-      '/signup',
-      data: {
+      path: '/signup',
+      body: {
         'email': email,
+        'firstName': firstName,
+        'lastName': lastName,
         'password': password,
       },
     );
 
-    return Right(response);
+    return response.fold(
+          (failure) => Left(failure),
+          (data) => Right(data),
+    );
   }
 
   @override
@@ -42,13 +56,16 @@ class AuthDataSourceImpl implements AuthDataSource {
     required String code,
   }) async {
     final response = await apiConsumer.post(
-      '/verify',
-      data: {
+      path: '/verify',
+      body: {
         'email': email,
         'code': code,
       },
     );
 
-    return Right(response);
+    return response.fold(
+          (failure) => Left(failure),
+          (data) => Right(data),
+    );
   }
 }

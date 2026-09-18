@@ -1,3 +1,5 @@
+import 'package:dartz/dartz.dart';
+import '/core/network/error/failures.dart';
 abstract class AuthDataSource {
 
   Future<Either<Failure, Map<String, dynamic>>> login({
