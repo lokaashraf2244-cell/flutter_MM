@@ -1,5 +1,5 @@
 import 'package:fpdart/fpdart.dart' show Either;
-import 'package:flutter_MM/core/network/error/failures.dart';
+import 'package:mm/core/network/error/failures.dart';
 
 abstract class ApiConsumer {
   Future<Either<ServerFailure, Map<String, dynamic>>> get({
