@@ -5,7 +5,7 @@ import 'theme_cubit.dart';
 import 'app_theme.dart';
 import 'theme_state.dart';
 import 'product_cubit.dart';
-import 'productservice.dart';
+import 'product_service.dart';
 
 void main() {
   runApp(const MyApp());
