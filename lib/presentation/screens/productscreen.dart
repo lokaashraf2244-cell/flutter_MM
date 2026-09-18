@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'product_cubit.dart';
-import 'product_state.dart';
+import '/presentation/cubit/product/product_cubit.dart';
+import '/presentation/cubit/product/product_state.dart';
 
 class ProductsScreen extends StatefulWidget {
   const ProductsScreen({super.key});
