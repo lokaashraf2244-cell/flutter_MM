@@ -37,7 +37,13 @@ dependencies:
   fpdart: ^1.1.1
   dio: ^5.11.1
   flutter_bloc: ^9.1.1
+
   equatable: ^3.0.0
+
+  pinput: ^6.0.2
+  get_it: ^9.2.1
+  freezed: ^4.0.2
+
 
 dev_dependencies:
   flutter_test:

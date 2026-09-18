@@ -33,7 +33,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 width: double.infinity,
                 height: 240,
                 child: Image.asset(
-                  'Assets1/images/WhatsApp.jpeg',
+                  'Assets/images/WhatsApp.jpeg',
                   fit: BoxFit.cover,
                 ),
               ),
