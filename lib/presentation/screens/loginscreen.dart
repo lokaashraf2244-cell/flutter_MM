@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'customsocialbutton.dart';
-import 'custom_text_field_widget.dart';
+import 'custom_text_filed_widget.dart';
 import 'signupscreen.dart';
 import 'Theme_cubit.dart';
 import 'Theme_state.dart';
