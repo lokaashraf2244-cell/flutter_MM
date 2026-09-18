@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'customsocialbutton.dart';
-import 'custom_text_filed_widget.dart';
+import 'package:mm/core/widget/customsocialbutton.dart';
+import 'package:mm/core/widget/custom_text_filed_widget.dart';
 import 'signupscreen.dart';
-import 'theme_cubit.dart';
-import 'theme_state.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:mm/core/cubit/theme/theme_cubit.dart';
+import 'package:mm/core/cubit/theme/theme_state.dart';import 'package:flutter_bloc/flutter_bloc.dart';
 import 'productscreen.dart';
 
 class loginscreen extends StatefulWidget{
