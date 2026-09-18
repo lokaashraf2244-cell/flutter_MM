@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'loginscreen.dart';
-import 'theme_cubit.dart';
-import 'app_theme.dart';
-import 'theme_state.dart';
-import 'product_cubit.dart';
+import 'package:mm/presentation/screens/loginscreen.dart';
+import 'package:mm/core/cubit/theme/theme_cubit.dart';
+import 'package:mm/core/utils/app_theme.dart';
+import 'package:mm/core/cubit/theme/theme_state.dart';
 import 'product_service.dart';
-
+import 'presentation/cubit/product/product_cubit.dart';
 void main() {
   runApp(const MyApp());
 }
